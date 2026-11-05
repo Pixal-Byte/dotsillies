@@ -2,6 +2,14 @@
 alias reload='source ~/.bashrc'
 alias ..='cd ..'
 
+#trash-cli related aliases
+if command -v trash-put >/dev/null; then
+	alias tp='trash-put'
+	alias tl='trash-list'
+	alias te='trash-empty'
+	alias tr='trash-restore'
+fi
+
 #eza's aliases
 alias ll='eza -lh'
 alias lla='eza -lha'
