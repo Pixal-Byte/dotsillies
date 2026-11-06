@@ -12,7 +12,8 @@ fi
 
 #eza's aliases
 _eza_base='--icons --group-directories-first --git --color=always'
-alias lt="eza $_eza_base -Ta --level=2"
+alias lta="eza $_eza_base -Ta --level=2"
+alias lt="eza $_eza_base -T"
 alias ll="eza $_eza_base -lh"
 alias lla="eza $_eza_base -lha"
 alias la="eza $_eza_base -a"
