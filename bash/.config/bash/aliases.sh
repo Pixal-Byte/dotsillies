@@ -11,9 +11,13 @@ if command -v trash-put >/dev/null; then
 fi
 
 #eza's aliases
-alias ll='eza -lh'
-alias lla='eza -lha'
-alias la='eza -a'
+_eza_base='--icons --group-directories-first --git --color=always'
+alias lt="eza $_eza_base -Ta --level=2"
+alias ll="eza $_eza_base -lh"
+alias lla="eza $_eza_base -lha"
+alias la="eza $_eza_base -a"
+alias ls="eza $_eza_base"
+unset _eza_base
 
 #package dependent aliases
 command -v fastfetch >/dev/null && alias ff=fastfetch
