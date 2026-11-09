@@ -2,6 +2,11 @@
 alias reload='source ~/.bashrc'
 alias ..='cd ..'
 
+#gitui aliases
+if command -v gitui --version >/dev/null; then
+	alias gu='gitui'
+fi
+
 #trash-cli related aliases
 if command -v trash-put >/dev/null; then
 	alias tp='trash-put'
