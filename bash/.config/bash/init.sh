@@ -1,5 +1,9 @@
 # sourced from ~/.bashrc (which stays untracked / per-machine)
 
+#adding pointer to bat config file
+export BAT_CONFIG_PATH="$HOME/.config/bat/config.conf"
+export BAT_CONFIG_DIR="$HOME/.config/bat"
+
 #adding newly created, or already existent, "$HOME/.local/bin" to path
 case ":$PATH:" in
 	*":$HOME/.local/bin:"*) ;;
