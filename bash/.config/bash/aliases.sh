@@ -28,6 +28,7 @@ unset _eza_base
 #package dependent aliases
 command -v fastfetch >/dev/null && alias ff=fastfetch
 command -v batcat    >/dev/null && alias bat='batcat'
+command -v batcat    >/dev/null && alias batrebuild='bat cache --build'
 command -v eza       >/dev/null || alias ll='ls -lh'
 command -v eza       >/dev/null || alias lla='ls -lha'
 command -v eza       >/dev/null || alias la='ls -a'
