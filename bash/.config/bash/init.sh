@@ -1,5 +1,8 @@
 # sourced from ~/.bashrc (which stays untracked / per-machine)
 
+#use bat as the manpager
+export MANPAGER='batcat -plman'
+
 #adding pointer to bat config file
 export BAT_CONFIG_PATH="$HOME/.config/bat/config.conf"
 export BAT_CONFIG_DIR="$HOME/.config/bat"
