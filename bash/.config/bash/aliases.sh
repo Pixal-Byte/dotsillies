@@ -7,6 +7,12 @@ if command -v gitui --version >/dev/null; then
 	alias gu='gitui'
 fi
 
+#github CLI  aliases
+#for gh-dash
+if command -v gh >/dev/null 2>&1 && gh extension list | grep -q 'gh-dash'; then
+        alias ghd='gh dash'
+fi
+
 #trash-cli related aliases
 if command -v trash-put >/dev/null; then
 	alias tp='trash-put'
