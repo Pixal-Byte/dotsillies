@@ -8,9 +8,14 @@ if command -v gitui --version >/dev/null; then
 fi
 
 #github CLI  aliases
-#for gh-dash
-if command -v gh >/dev/null 2>&1 && gh extension list | grep -q 'gh-dash'; then
-        alias ghd='gh dash'
+if command -v gh >/dev/null; then
+    _gh_ext="${XDG_DATA_HOME:-$HOME/.local/share}/gh/extensions"
+
+    alias ghpr='gh pr status'
+
+    [ -d "$_gh_ext/gh-dash" ] && alias ghd='gh dash'
+
+    unset _gh_ext
 fi
 
 #trash-cli related aliases
