@@ -16,7 +16,7 @@ mkdir -p "$HOME/.local/bin"
 if [[ " ${requested[*]} " == *" gitui "*  ]] && [ ! -e "$HOME/.local/bin/gitui" ]; then
 	[ -f bin/gitui ] || { echo "bin/gitui missing from repo" >&2; exit 1; }
 	echo "=== No gitui binary found already installed. copying from ./bin==="
-	install -m 755 bin/gitui "$HOME/.local/bin/gitui"
+	install -m 755 bin/gitui/gitui "$HOME/.local/bin/gitui"
 fi
 
 #building stow list
