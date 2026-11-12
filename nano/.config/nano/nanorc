@@ -1,0 +1,22 @@
+set titlecolor bold,white,magenta
+# Include syntax highlighting
+include "/usr/share/nano/*.nanorc"
+
+#ANSI Palette usage
+set statuscolor bold,white,magenta
+set selectedcolor black,lightmagenta
+set numbercolor magenta
+set keycolor lightmagenta
+set functioncolor white
+set promptcolor white,magenta
+set errorcolor bold,white,red
+set spotlightcolor black,lightmagenta
+set stripecolor ,yellow
+set scrollercolor magenta
+
+#Layout stuff
+set linenumbers
+set minibar  
+set nohelp
+set indicator
+set tabsize 4
