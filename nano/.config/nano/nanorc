@@ -16,7 +16,7 @@ set scrollercolor magenta
 
 #Layout stuff
 set linenumbers
-set minibar  
+set minibar
 set nohelp
 set indicator
 set tabsize 4
