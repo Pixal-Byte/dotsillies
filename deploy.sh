@@ -27,9 +27,7 @@ for p in "${requested[@]}"; do
 	fi
 done
 
-# --no-folding keeps real directories, so untracked files in ~/.config/kitty
-# etc. don't end up inside the repo
-# guared the stow_pkgs array to not fail the stow command
+# guarded the stow_pkgs array to not fail the stow command
 if [ ${#stow_pkgs[@]} -gt 0 ]; then
 	stow -t "$HOME" --no-folding --restow "${stow_pkgs[@]}"
 fi
