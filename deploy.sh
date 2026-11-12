@@ -32,6 +32,11 @@ if [ ${#stow_pkgs[@]} -gt 0 ]; then
 	stow -t "$HOME" --no-folding --restow "${stow_pkgs[@]}"
 fi
 
+#auto rebuild bat's cache if (re)deployed
+if [[ " ${requested[*]} " == *" bat "* ]]; then
+	bat cache --build
+fi
+
 # hook the shared config into this machine's .bashrc (idempotent)
 hook='[ -f ~/.config/bash/init.sh ] && . ~/.config/bash/init.sh  # dotfiles'
 touch ~/.bashrc
