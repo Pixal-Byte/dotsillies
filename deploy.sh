@@ -34,7 +34,7 @@ fi
 
 #auto rebuild bat's cache if (re)deployed
 if [[ " ${requested[*]} " == *" bat "* ]]; then
-	bat cache --build
+	batcat cache --build
 fi
 
 # hook the shared config into this machine's .bashrc (idempotent)
