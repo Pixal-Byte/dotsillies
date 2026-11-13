@@ -1,6 +1,7 @@
 # QoL aliases
 alias reload='source ~/.bashrc'
 alias ..='cd ..'
+alias cl='clear'
 
 #gitui aliases
 if command -v gitui --version >/dev/null; then
