@@ -3,6 +3,9 @@ alias reload='source ~/.bashrc'
 alias ..='cd ..'
 alias cl='clear'
 
+#weechat shorthand
+command -v weechat >/dev/null && alias we='weechat'
+
 #gitui aliases
 if command -v gitui --version >/dev/null; then
 	alias gu='gitui'
