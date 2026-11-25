@@ -3,6 +3,9 @@ alias reload='source ~/.bashrc'
 alias ..='cd ..'
 alias cl='clear'
 
+#docker aliases
+crewlog='docker compose -f ~/crewlog-flux/docker-compose.yml exec crewlog python -m crewlog.cli'
+
 #weechat shorthand
 command -v weechat >/dev/null && alias we='weechat'
 
