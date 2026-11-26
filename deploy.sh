@@ -37,6 +37,10 @@ if [[ " ${requested[*]} " == *" bat "* ]]; then
 	batcat cache --build
 fi
 
+if [[ " ${requested[*]} " == *" fonts "* ]]; then
+	fc-cache -f
+fi
+
 # hook the shared config into this machine's .bashrc (idempotent)
 hook='[ -f ~/.config/bash/init.sh ] && . ~/.config/bash/init.sh  # dotfiles'
 touch ~/.bashrc
